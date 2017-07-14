@@ -208,11 +208,11 @@ var computerAI = function () {
                         if (myWin[k] == 1) {
                             myScore[i][j] += 1;
                         } else if (myWin[k] == 2) {
-                            myScore[i][j] += 100;
+                            myScore[i][j] += 101;
                         } else if (myWin[k] == 3) {
-                            myScore[i][j] += 1000;
+                            myScore[i][j] += 1001;
                         } else if (myWin[k] == 4) {
-                            myScore[i][j] += 10000;
+                            myScore[i][j] += 10001;
                         }
 
                         if (AIWin[k] == 1) {
