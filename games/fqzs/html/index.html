@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>飞禽走兽</title>
+
+    <link rel="stylesheet" href="../css/game.css" type="text/css">
+    <!--引入jQuery-->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--加载底层js-->
+    <script type="text/javascript" src="../js/support.js"></script>
+    <!--加载动画js-->
+    <script type="text/javascript" src="../js/animation.js"></script>
+    <!--加载轮转动画js-->
+    <script type="text/javascript" src="../js/round.js"></script>
+    <!--加载逻辑js-->
+    <script type="text/javascript" src="../js/logic.js"></script>
+    <!--加载主函数-->
+    <script type="text/javascript" src="../js/game.js"></script>
+
+    <script language="JavaScript">
+        document.oncontextmenu = new Function("event.returnValue=false;"); //禁止右键功能,单击右键将无任何反应
+        document.onselectstart = new Function("event.returnValue=false;"); //禁止选择,也就是无法复制
+    </script>
+
+</head>
+<body>
+<!--游戏整体-->
+<div id="chess">
+
+    <!--动物轮转区域-->
+    <div>
+        <!--   0   1     2    3     4    5     6   7    8    9     10-->
+        <!--[飞禽，鲨鱼，走兽，燕子，鸽子，孔雀，老鹰，狮子，熊猫，猴子，兔子]-->
+        <div class="chess-cell chess-cell-1 active" id="cell-0-0">猴子</div>
+        <div class="chess-cell chess-cell-2" id="cell-0-1">兔子</div>
+        <div class="chess-cell chess-cell-3" id="cell-0-2">兔子</div>
+        <div class="chess-cell chess-cell-4" id="cell-0-3">兔子</div>
+        <div class="chess-cell chess-cell-5" id="cell-0-4">鲨鱼</div>
+        <div class="chess-cell chess-cell-6" id="cell-0-5">燕子</div>
+        <div class="chess-cell chess-cell-7" id="cell-0-6">燕子</div>
+        <div class="chess-cell chess-cell-8" id="cell-0-7">燕子</div>
+        <div class="chess-cell chess-cell-9" id="cell-0-8">鸽子</div>
+
+        <div class="chess-cell chess-cell-10" id="cell-1-8">鸽子</div>
+        <div class="chess-cell chess-cell-11" id="cell-2-8">鸽子</div>
+        <div class="chess-cell chess-cell-12" id="cell-3-8">鲨鱼</div>
+        <div class="chess-cell chess-cell-13" id="cell-4-8">孔雀</div>
+        <div class="chess-cell chess-cell-14" id="cell-5-8">孔雀</div>
+        <div class="chess-cell chess-cell-15" id="cell-6-8">孔雀</div>
+
+        <div class="chess-cell chess-cell-16" id="cell-6-7">老鹰</div>
+        <div class="chess-cell chess-cell-17" id="cell-6-6">老鹰</div>
+        <div class="chess-cell chess-cell-18" id="cell-6-5">老鹰</div>
+        <div class="chess-cell chess-cell-19" id="cell-6-4">鲨鱼</div>
+        <div class="chess-cell chess-cell-20" id="cell-6-3">狮子</div>
+        <div class="chess-cell chess-cell-21" id="cell-6-2">狮子</div>
+        <div class="chess-cell chess-cell-22" id="cell-6-1">狮子</div>
+        <div class="chess-cell chess-cell-23" id="cell-6-0">熊猫</div>
+
+        <div class="chess-cell chess-cell-24" id="cell-5-0">熊猫</div>
+        <div class="chess-cell chess-cell-25" id="cell-4-0">熊猫</div>
+        <div class="chess-cell chess-cell-26" id="cell-3-0">鲨鱼</div>
+        <div class="chess-cell chess-cell-27" id="cell-2-0">猴子</div>
+        <div class="chess-cell chess-cell-28" id="cell-1-0">猴子</div>
+    </div>
+
+    <!--中间内容区域-->
+    <div id="chess-information">
+        <!--历史打中的飞禽走兽---十个-->
+        <div id="chess-information-information">
+            <div id="cii-0" class="cii"><span id="cii-0-0"></span></div>
+            <div id="cii-1" class="cii"><span id="cii-0-1"></span></div>
+            <div id="cii-2" class="cii"><span id="cii-0-2"></span></div>
+            <div id="cii-3" class="cii"><span id="cii-0-3"></span></div>
+            <div id="cii-4" class="cii"><span id="cii-0-4"></span></div>
+            <div id="cii-5" class="cii"><span id="cii-0-5"></span></div>
+            <div id="cii-6" class="cii"><span id="cii-0-6"></span></div>
+            <div id="cii-7" class="cii"><span id="cii-0-7"></span></div>
+            <div id="cii-8" class="cii"><span id="cii-0-8"></span></div>
+            <div id="cii-9" class="cii"><span id="cii-0-9"></span></div>
+
+        </div>
+
+        <!--本次游戏结果大图显示-->
+        <div></div>
+
+        <!--消息区域-->
+        <div id="chess-information-info">
+
+        </div>
+
+        <!--金手指区域-->
+        <div></div>
+    </div>
+
+    <!--玩家信息-->
+    <div id="chess-user">
+        <table id="user-table">
+            <tr>
+                <td>玩家：</td>
+                <td><span>花好月圆</span></td>
+            </tr>
+            <tr>
+                <td>分数：</td>
+                <td><span id="user-score">100</span></td>
+            </tr>
+            <tr>
+                <td>局数：</td>
+                <td><span id="user-onGameTimes">1</span></td>
+            </tr>
+        </table>
+
+
+    </div>
+
+    <!--赌注区域-->
+    <div id="chess-bet">
+
+        <!--赌注倍数，飞禽走兽，boos鲨鱼-->
+        <table id="bet-rate">
+            <tr>
+                <td><span>倒计时</span></td>
+                <td><input type="button" value="1" id="bet-multiple-1" name="multiple"></td>
+                <td><input type="button" value="10" id="bet-multiple-2" name="multiple"></td>
+                <td><input type="button" value="50" id="bet-multiple-3" name="multiple"></td>
+                <td><input type="button" value="飞禽X2" name="bet-animal" id="btn-0"></td>
+                <td><input type="button" value="鲨鱼X24" name="bet-animal" id="btn-1"></td>
+                <td><input type="button" value="走兽X2" name="bet-animal" id="btn-2"></td>
+            </tr>
+            <tr>
+                <td><span id="goTime"></span></td>
+                <td><input type="button" value="100" id="bet-multiple-4" name="multiple"></td>
+                <td><input type="button" value="1000" id="bet-multiple-5" name="multiple"></td>
+                <td><input type="button" value="续压" id="bet-before"></td>
+                <!--[飞禽，鲨鱼，走兽，燕子，鸽子，孔雀，老鹰，狮子，熊猫，猴子，兔子]-->
+                <td><span id="span-0">0</span></td>
+                <td><span id="span-1">0</span></td>
+                <td><span id="span-2">0</span></td>
+            </tr>
+        </table>
+
+        <!--下注-->
+        <table id="bet-bet">
+            <tr>
+                <td><input type="button" value="燕子X6" name="bet-animal" id="btn-3"></td>
+                <td><input type="button" value="鸽子X6" name="bet-animal" id="btn-4"></td>
+                <td><input type="button" value="孔雀X8" name="bet-animal" id="btn-5"></td>
+                <td><input type="button" value="老鹰X12" name="bet-animal" id="btn-6"></td>
+                <td><input type="button" value="狮子X12" name="bet-animal" id="btn-7"></td>
+                <td><input type="button" value="熊猫X8" name="bet-animal" id="btn-8"></td>
+                <td><input type="button" value="猴子X6" name="bet-animal" id="btn-9"></td>
+                <td><input type="button" value="兔子X6" name="bet-animal" id="btn-10"></td>
+            </tr>
+            <tr>
+                <!--[飞禽，鲨鱼，走兽，燕子，鸽子，孔雀，老鹰，狮子，熊猫，猴子，兔子]-->
+                <td><span id="span-3">0</span></td>
+                <td><span id="span-4">0</span></td>
+                <td><span id="span-5">0</span></td>
+                <td><span id="span-6">0</span></td>
+                <td><span id="span-7">0</span></td>
+                <td><span id="span-8">0</span></td>
+                <td><span id="span-9">0</span></td>
+                <td><span id="span-10">0</span></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!--作者信息-->
+    <div id="creator">
+        <span>create by lgc1102@live.com</span>
+    </div>
+
+
+</div>
+
+</body>
+</html>

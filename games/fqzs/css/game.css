@@ -1,0 +1,153 @@
+/*游戏主体是*/
+#chess {
+    width: 1000px;
+    height: 790px;
+    padding: 10px;
+
+    margin: 50px auto;
+    background-color: rgba(9, 14, 12, 0.07);
+
+    border-radius: 10px;
+    position: relative;
+
+    border: 5px solid black;;
+}
+
+/***************************************************************************8*/
+/*游戏轮转区域*/
+.chess-cell {
+    width: 100px;
+    height: 70px;
+    /*border-radius: 6px;*/
+    background-color: #ccc0b3;
+    position: absolute;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.active {
+    color: rgb(255, 0, 0);
+    border: 1px solid #ff0300;
+}
+
+/********************************************************************************************/
+/*游戏轮转中心区域*/
+#chess-information {
+    position: absolute;
+    width: 760px;
+    height: 390px;
+    /*border-radius: 6px;*/
+    background-color: rgba(193, 195, 156, 0.22);
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+#chess-information-information {
+    height: 60px;
+    margin: 6px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+
+.cii {
+    width: 68.5px;
+    height: 50px;
+    position: absolute;
+    font-size: 25px;
+    line-height: 50px;
+    margin: 5px;
+    background-color: red;
+    text-align: center;
+}
+
+/**********************************************************************************888*/
+/*用户信息区域*/
+#chess-user {
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    background-color: #ccc0b3;
+    position: absolute;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#user-table {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+/*****************************************************************************************/
+/*下注区域*/
+#chess-bet {
+    width: 770px;
+    height: 200px;
+    border-radius: 6px;
+    background-color: #ccc0b3;
+    position: absolute;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 21px;
+    color: red;
+    line-height: 25px;
+    text-align: center;
+}
+
+#bet-rate {
+    width: 750px;
+    height: 80px;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+#bet-bet {
+    width: 750px;
+    height: 80px;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+.multiple {
+    font-family: Arial;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+    padding: 7px;
+}
+
+input {
+    width: 70px;
+    height: 25px;
+}
+
+/***********************************************************************************************/
+/*作者*/
+#creator {
+    width: 500px;
+    height: 10px;
+    border-radius: 2px;
+    position: absolute;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    margin: 10px;
+}
+
+/****************************************************************************************************/
