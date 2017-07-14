@@ -216,11 +216,11 @@ var computerAI = function () {
                         }
 
                         if (AIWin[k] == 1) {
-                            AIScore[i][j] += 120;
+                            AIScore[i][j] += 200;
                         } else if (AIWin[k] == 2) {
-                            AIScore[i][j] += 220;
+                            AIScore[i][j] += 400;
                         } else if (AIWin[k] == 3) {
-                            AIScore[i][j] += 2100;
+                            AIScore[i][j] += 3000;
                         } else if (AIWin[k] == 4) {
                             AIScore[i][j] += 20000;
                         }
