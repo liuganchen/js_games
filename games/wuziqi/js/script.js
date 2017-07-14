@@ -206,21 +206,21 @@ var computerAI = function () {
                     //此处可以落子
                     if (wins[i][j][k]) {
                         if (myWin[k] == 1) {
-                            myScore[i][j] += 100;
+                            myScore[i][j] += 1;
                         } else if (myWin[k] == 2) {
-                            myScore[i][j] += 200;
+                            myScore[i][j] += 100;
                         } else if (myWin[k] == 3) {
-                            myScore[i][j] += 2000;
+                            myScore[i][j] += 1000;
                         } else if (myWin[k] == 4) {
                             myScore[i][j] += 10000;
                         }
 
                         if (AIWin[k] == 1) {
-                            AIScore[i][j] += 200;
+                            AIScore[i][j] += 2;
                         } else if (AIWin[k] == 2) {
-                            AIScore[i][j] += 400;
+                            AIScore[i][j] += 200;
                         } else if (AIWin[k] == 3) {
-                            AIScore[i][j] += 3000;
+                            AIScore[i][j] += 2000;
                         } else if (AIWin[k] == 4) {
                             AIScore[i][j] += 20000;
                         }
