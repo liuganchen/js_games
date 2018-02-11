@@ -1,11 +1,11 @@
 //到顶端的距离
 var getPosTop = function (i, j) {
-    return 20 + i * 120;
+    return  i * 120;
 }
 
 //到左侧的距离
 var getPosLeft = function (i, j) {
-    return 20 + j * 120;
+    return j * 120;
 }
 
 //不同的数字不同的背景色
