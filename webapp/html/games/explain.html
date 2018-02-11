@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>游戏说明</title>
     <!--jQuery-->
-    <script src="../jQuery/jQuery.3.3.1.min.js"></script>
+    <script src="../../frtfrms/jquery/jquery.3.3.1.min.js"></script>
     <!--bootstrap-->
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -15,12 +15,13 @@
     <!--integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    <script src="../../frtfrms/bootstrap/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <script src="../../appjs/default.js"></script>
     <script>
         $(function () {
-            $('#nav').load("../head.html");
+            $('#nav').load(bg_util.getContextPath() + "/webapp/html/head.html");
         });
     </script>
 </head>
