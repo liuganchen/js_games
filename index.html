@@ -46,7 +46,9 @@
 <!--加载头文件 - 导航栏-->
 <script>
     $(function () {
+        console.info(bg_util.getContextPath());
         $('#nav').load(bg_util.getContextPath()  + "/webapp/html/head.html");
+
     });
 </script>
 </html>

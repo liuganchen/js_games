@@ -1,4 +1,8 @@
 const bg_util = (function () {
+    /**
+     * 获取 根目录 地址
+     * @returns {string}
+     */
     let getContextPath = function () {
         let pathName = document.location.pathname;
         let index = pathName.substr(1).indexOf("/");
@@ -24,7 +28,7 @@ const bg_util = (function () {
             case 5:
                 break;
             case 99:
-                window.location = path + "/webapp/html/fqzs.html";
+                window.location = path + "/index.html";
                 break;
             default:
                 break;
