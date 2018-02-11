@@ -37,6 +37,7 @@
         document.oncontextmenu = new Function("event.returnValue=false;"); //禁止右键功能,单击右键将无任何反应
         document.onselectstart = new Function("event.returnValue=false;"); //禁止选择,也就是无法复制
         $(function () {
+            console.info(bg_util.getContextPath());
             $('#nav').load(bg_util.getContextPath() + '/webapp/html/head.html');
         });
     </script>
