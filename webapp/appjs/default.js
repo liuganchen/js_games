@@ -1,3 +1,7 @@
+/**
+ *
+ * @type {{addressJump, getContextPath}}
+ */
 const bg_util = (function () {
     /**
      * 获取 根目录 地址
@@ -6,7 +10,8 @@ const bg_util = (function () {
     let getContextPath = function () {
         let pathName = document.location.pathname;
         let index = pathName.substr(1).indexOf("/");
-        return pathName.substr(0, index + 1);
+        //如果项目名称为空，或者等于webAPP 那么 返回空
+        return pathName.substr(0, index + 1) === "/webapp" ? "" : pathName.substr(0, index + 1);
     };
 
     let addressJump = function (index) {
@@ -34,5 +39,8 @@ const bg_util = (function () {
                 break;
         }
     };
-    return {addressJump: addressJump, getContextPath: getContextPath}
+    return {
+        addressJump: addressJump,
+        getContextPath: getContextPath
+    }
 })();
