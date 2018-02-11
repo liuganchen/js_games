@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋</title>
+    <link href="../../../style/games/wuziqi/sty.css" type="text/css" REL="stylesheet">
+    <!--bootstrap-->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../../../frtfrms/bootstrap/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div id="nav"></div>
+<div class="container">
+    <canvas id="chess" width="450px" height="450px">
+        <!--五子棋区域-->
+    </canvas>
+</div>
+
+</body>
+
+
+<!--jQuery-->
+<script src="../../../frtfrms/jquery/jquery.3.3.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../../../frtfrms/bootstrap/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<script src="../../../appjs/default.js"></script>
+<script type="text/javascript" src="../../../appjs/games/wuziqi/script.js"></script>
+
+
+<!--加载头文件 - 导航栏-->
+<script>
+    $(function () {
+        $('#nav').load(bg_util.getContextPath() + '/webapp/html/head.html');
+    });
+</script>
+</html>

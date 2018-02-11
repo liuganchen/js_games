@@ -3,32 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>卧月明的博客</title>
-    <!--jQuery-->
-    <script src="../frtfrms/jquery/jquery.3.3.1.min.js"></script>
+
     <!--bootstrap-->
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    <link rel="stylesheet" href="../frtfrms/bootstrap/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
     <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"-->
     <!--integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
 
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
 
-    <!--加载头文件 - 导航栏-->
-    <script>
-        $(function () {
-            $('#nav').load('head.html');
-        });
-    </script>
+
 </head>
 <body>
 <div id="nav">
-<!--导航加载区域-->
+    <!--导航加载区域-->
 </div>
 
 <div class="jumbotron">
@@ -43,4 +33,20 @@
 
 
 </body>
+
+<!--jQuery-->
+<script src="../frtfrms/jquery/jquery.3.3.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../frtfrms/bootstrap/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="../appjs/default.js"></script>
+
+
+<!--加载头文件 - 导航栏-->
+<script>
+    $(function () {
+        $('#nav').load('head.html');
+    });
+</script>
 </html>

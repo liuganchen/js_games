@@ -20,10 +20,10 @@ for (var i = 0; i < 15; i++) {
 }
 //绘画作者信息
 var info = new Image();
-info.src = "../img/info.png";
+info.src = bg_util.getContextPath()+"/webapp/style/games/wuziqi/img/info.png";
 info.onload = function () {
     //画info
-    context.drawImage(info, 0, 0, 450, 450);
+    // context.drawImage(info, 0, 0, 450, 450);
     //画棋线
     drawChessBoard();
     //画棋子
