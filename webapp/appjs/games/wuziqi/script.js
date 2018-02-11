@@ -20,7 +20,7 @@ for (var i = 0; i < 15; i++) {
 }
 //绘画作者信息
 var info = new Image();
-info.src = bg_util.getContextPath()+"/webapp/style/games/wuziqi/img/info.png";
+info.src = bg_util.getContextPath()+"/webapp/style/games/wuziqi/info.png";
 info.onload = function () {
     //画info
     // context.drawImage(info, 0, 0, 450, 450);
