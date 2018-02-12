@@ -81,8 +81,8 @@ var logic = {
 
         //加载轮转中心区域
         var information = $('#chess-information');
-        information.css('top', 100);
-        information.css('left', 130);
+        information.css('top', 85);
+        information.css('left', 115);
 
         //加载历史打中动物信息
         for (var i = 0; i < 10; i++) {
@@ -101,12 +101,12 @@ var logic = {
 
         //个人信息加载
         var user = $('#chess-user');
-        user.css('top', 580);
-        user.css('left', 20);
+        user.css('top', 570);
+        user.css('left', 5);
         //赌注区域加载
         var bet = $('#chess-bet');
-        bet.css('top', 580);
-        bet.css('left', 230);
+        bet.css('top', 570);
+        bet.css('left', 215);
         var creator = $('#creator');
         //作者信息加载
         creator.css('top', 780);

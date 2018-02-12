@@ -8,16 +8,16 @@ var support = {
 
     //到顶端的距离
     getPosTop: function (i, j) {
-        return 20 + i * 80;
+        return 5+ i * 80;
     },
 
     //到左侧的距离
     getPosLeft: function (i, j) {
-        return 20 + j * 110;
+        return 5+ j * 110;
     },
     //到左侧的距离
     getCiiLeft: function (e) {
-        return 10 + e * 73.5;
+        return 15+ e * 73.5;
     },
 
 

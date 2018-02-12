@@ -56,11 +56,11 @@
 
 .cii {
     width: 68.5px;
-    height: 50px;
+    height: 52px;
     position: absolute;
     font-size: 25px;
     line-height: 50px;
-    margin: 5px;
+    /*margin: 5px;*/
     background-color: red;
     text-align: center;
 }
@@ -97,7 +97,7 @@
     position: absolute;
     font-family: Arial;
     font-weight: bold;
-    font-size: 21px;
+    /*font-size: 21px;*/
     color: red;
     line-height: 25px;
     text-align: center;
